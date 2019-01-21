@@ -12,7 +12,7 @@
 #------------------------------------------------------------
 
 NETATALK_VERSION='3.1.11'
-MAINTAINER='Bruno \brualexander@gmail.com\>'
+MAINTAINER='YOUR NAME \YOUR EMAIL\>'
 
 sudo apt install --yes \
 build-essential \
@@ -69,7 +69,7 @@ sudo rm -rf /tmp/netatalk*
 #------------------------------------------------------------
 
 TIMEMACHINE_PATH='/data/timemachine'
-VALID_USER='bacm'
+VALID_USER='YOURUSERNAME'
 
 sudo mkdir -p $TIMEMACHINE_PATH
 sudo chown -R $VALID_USER:$VALID_USER $TIMEMACHINE_PATH

@@ -1,3 +1,3 @@
 # make_netatalk
 
-### Simple installation script for Netatalk (AFP support)
+### Installation script for Netatalk (AFP support)

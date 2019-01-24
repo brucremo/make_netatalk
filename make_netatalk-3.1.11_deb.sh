@@ -11,8 +11,11 @@
 # STEP ONE - Make the Netatalk deb on a build machine
 #------------------------------------------------------------
 
+read -p 'Maintainer Name: ' mtnr
+read -p 'Your e-mail: ' email
+
 NETATALK_VERSION='3.1.11'
-MAINTAINER='YOUR NAME \YOUR EMAIL\>'
+MAINTAINER='$mtnr \$email\>'
 
 sudo apt install --yes \
 build-essential \
@@ -68,8 +71,11 @@ sudo rm -rf /tmp/netatalk*
 # STEP TWO - Install the Netatalk deb on a production server
 #------------------------------------------------------------
 
-TIMEMACHINE_PATH='/data/timemachine'
-VALID_USER='YOURUSERNAME'
+read -p 'Valid Username: ' username
+read -p 'Time Machine Path: ' tmpath
+
+TIMEMACHINE_PATH=$tmpath
+VALID_USER=$username
 
 sudo mkdir -p $TIMEMACHINE_PATH
 sudo chown -R $VALID_USER:$VALID_USER $TIMEMACHINE_PATH
